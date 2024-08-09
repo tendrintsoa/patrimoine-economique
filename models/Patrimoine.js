@@ -1,4 +1,6 @@
-export default class Patrimoine {
+import Possession from "./possessions/Possession.js";
+
+  export default class Patrimoine {
   constructor(possesseur, possessions) {
     this.possesseur = possesseur;
     this.possessions = [...possessions]; // [Possession, Possession, ...]
@@ -25,3 +27,7 @@ export default class Patrimoine {
     );
   }
 }
+
+
+
+

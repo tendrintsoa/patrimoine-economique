@@ -3,7 +3,7 @@ export default class Possession {
     this.possesseur = possesseur;
     this.libelle = libelle;
     this.valeur = valeur;
-    this.dateDebut = dateDebut;
+    this.dateDebut = new Date(dateDebut);
     this.dateFin = dateFin;
     this.tauxAmortissement = tauxAmortissement;
   }
@@ -17,9 +17,9 @@ export default class Possession {
       return 0;
     }
     const differenceDate = {
-      year: dateActuelle.getFullYear() - this.dateDebut.getFullYear(),
-      month: dateActuelle.getMonth() - this.dateDebut.getMonth(),
-      day: dateActuelle.getDate() - this.dateDebut.getDate(),
+      year: new Date(dateActuelle).getFullYear() - this.dateDebut.getFullYear(),
+      month: new Date(dateActuelle).getMonth() - this.dateDebut.getMonth(),
+      day: new Date(dateActuelle).getDate() - this.dateDebut.getDate(),
     };
   
     var raison = differenceDate.year + differenceDate.month / 12 + differenceDate.day / 365;
