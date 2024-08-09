@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+
 async function readFile(path) {
   try {
     const data = await fs.readFile(path, { encoding: 'utf8' });

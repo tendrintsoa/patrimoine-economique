@@ -25,6 +25,7 @@ function App() {
   const listPossession = data[1].possessions
 
   return <div>
+    
       <Table className='table'>
         <thead>
           <tr>
@@ -48,6 +49,7 @@ function App() {
             )
           })}
         </tbody>
+        
       </Table>
       <p>
         Patrimoine :  {patrimoine} Ar
