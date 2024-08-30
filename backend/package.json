@@ -1,17 +1,16 @@
 {
-  "name": "patrimoine",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chai": "^5.1.1",
-    "express": "^4.19.2",
-    "mocha": "^10.7.0"
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2"
   }
 }
